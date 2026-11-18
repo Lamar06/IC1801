@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="صفحة تعليمية إثرائية عن أسس بناء المجتمع وعناية الإسلام بها، مدعومة بآيات قرآنية وأحاديث نبوية صحيحة.">
+<title>أسس بناء المجتمع وعناية الإسلام بها</title>
+<style>
+:root{
+  --ink:#183a3a;--muted:#607574;--teal:#174e4a;--teal2:#236b62;--mint:#e8f2ed;
+  --gold:#c89b55;--cream:#fbf8f1;--paper:#fffefa;--line:#e5e9e2;--shadow:0 18px 45px rgba(24,58,58,.09);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:88px}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Geeza Pro","SF Arabic",Tahoma,Arial,sans-serif;line-height:1.9}
+a{color:inherit}
+.progress{position:fixed;inset:0 0 auto;height:4px;background:transparent;z-index:50}
+.progress span{display:block;height:100%;width:0;background:var(--gold)}
+header{position:sticky;top:0;z-index:40;background:rgba(251,248,241,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(24,58,58,.08)}
+.nav{max-width:1120px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--teal);white-space:nowrap}
+.brand-mark{width:38px;height:38px;border-radius:13px;background:var(--teal);color:#f7e8c9;display:grid;place-items:center;font-size:19px}
+nav{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:13px;color:var(--muted);font-weight:700}
+nav a:hover{color:var(--teal2)}
+.theme{border:1px solid var(--line);background:var(--paper);color:var(--teal);border-radius:999px;padding:8px 12px;cursor:pointer;font:inherit;font-size:12px;font-weight:700}
+.wrap{max-width:1120px;margin:auto;padding:0 22px}
+.hero{padding:68px 0 54px;background:radial-gradient(circle at 12% 15%,rgba(200,155,85,.17),transparent 26%),linear-gradient(130deg,#123f3c,#1e5b53 70%,#2b7165);color:#fff;overflow:hidden;position:relative}
+.hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(255,255,255,.12);border-radius:50%;width:430px;height:430px;left:-180px;top:-240px}
+.hero:after{width:300px;height:300px;left:-90px;top:-170px}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:34px;align-items:center;position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;color:#f1d7a8;font-size:13px;font-weight:700;letter-spacing:.2px}
+.eyebrow:before{content:"";width:26px;height:1px;background:var(--gold)}
+h1{font-size:clamp(32px,5vw,54px);line-height:1.35;margin:14px 0 14px;max-width:720px}
+.hero p{color:#e2eeea;font-size:17px;max-width:690px;margin:0 0 25px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 19px;border-radius:999px;text-decoration:none;font-size:14px;font-weight:800;transition:.2s}
+.btn.primary{background:#f0d7aa;color:#25423d}
+.btn.ghost{border:1px solid rgba(255,255,255,.35);color:white}
+.btn:hover{transform:translateY(-2px)}
+.hero-art{min-height:270px;display:grid;place-items:center;position:relative}
+.arch{width:220px;height:250px;border:2px solid rgba(240,215,170,.72);border-bottom:0;border-radius:115px 115px 12px 12px;position:relative;display:flex;align-items:flex-end;justify-content:center;padding-bottom:18px}
+.arch:before{content:"";position:absolute;inset:18px 18px 0;border:1px solid rgba(255,255,255,.25);border-bottom:0;border-radius:100px 100px 0 0}
+.arch-inner{width:132px;height:125px;background:linear-gradient(145deg,rgba(240,215,170,.22),rgba(255,255,255,.05));border:1px solid rgba(240,215,170,.6);border-radius:75px 75px 7px 7px;display:grid;place-items:center;font-size:58px;color:#f2d8ac}
+.art-caption{position:absolute;bottom:0;right:50%;transform:translateX(50%);font-size:12px;color:#e8d6b7;white-space:nowrap}
+.section{padding:62px 0}
+.section-head{max-width:760px;margin:0 auto 30px;text-align:center}
+.kicker{color:var(--teal2);font-size:12px;font-weight:900;letter-spacing:.5px}
+h2{font-size:clamp(25px,3.5vw,36px);line-height:1.4;margin:7px 0 10px;color:var(--teal)}
+.section-head p{margin:0;color:var(--muted)}
+.intro-box{max-width:900px;margin:auto;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:25px 28px;box-shadow:var(--shadow);display:grid;grid-template-columns:54px 1fr;gap:18px;align-items:start}
+.intro-icon{width:52px;height:52px;border-radius:17px;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-size:24px}
+.intro-box p{margin:0;color:#405b58}
+.quote{margin-top:18px;padding:15px 18px;border-right:3px solid var(--gold);background:#f8f4ea;border-radius:10px;color:#31534d;font-weight:700}
+.quote small{display:block;color:#7d765f;font-weight:600;margin-top:5px;font-size:12px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 8px 25px rgba(24,58,58,.045);transition:.22s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.card-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}
+.num{font-size:12px;color:#a17b42;font-weight:900;letter-spacing:1px}
+.icon{width:43px;height:43px;border-radius:14px;background:var(--mint);display:grid;place-items:center;color:var(--teal);font-size:21px}
+.card h3{margin:0 0 8px;color:var(--teal);font-size:18px}
+.card p{margin:0 0 14px;color:var(--muted);font-size:14px}
+.evidence{border-top:1px solid var(--line);padding-top:13px;color:#3c5c55;font-size:14px}
+.evidence b{display:block;color:#9a743d;font-size:11px;margin-bottom:5px}
+.evidence .hadith{font-weight:700;color:var(--teal)}
+.evidence small{display:block;color:#788681;font-size:11px;margin-top:5px}
+.band{background:#eaf1eb;border-top:1px solid #dce8df;border-bottom:1px solid #dce8df}
+.care-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.care-item{display:flex;gap:15px;background:rgba(255,255,255,.7);padding:18px;border:1px solid #dfe9e1;border-radius:17px}
+.care-no{flex:0 0 34px;height:34px;border-radius:11px;background:var(--teal);color:white;display:grid;place-items:center;font-weight:900;font-size:13px}
+.care-item h3{margin:0 0 4px;font-size:16px;color:var(--teal)}
+.care-item p{margin:0;color:var(--muted);font-size:13px}
+.practice-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:stretch}
+.practice-panel{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:25px}
+.practice-panel h3{margin:0 0 15px;color:var(--teal)}
+ul.checks{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.checks li{display:flex;gap:10px;align-items:flex-start;color:#526a65;font-size:14px}
+.checks li:before{content:"✓";flex:0 0 22px;height:22px;border-radius:50%;background:var(--mint);color:var(--teal);display:grid;place-items:center;font-weight:900;font-size:12px}
+.highlight{background:var(--teal);color:#fff;border-radius:20px;padding:26px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden}
+.highlight:after{content:"";position:absolute;width:200px;height:200px;border:1px solid rgba(255,255,255,.15);border-radius:50%;left:-70px;bottom:-100px}
+.highlight blockquote{font-size:21px;font-weight:800;line-height:1.8;margin:0 0 10px;position:relative;z-index:1}
+.highlight p{color:#d6e5df;margin:0;font-size:13px;position:relative;z-index:1}
+.quiz{max-width:850px;margin:auto;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:25px;box-shadow:var(--shadow)}
+.question{padding:16px 0;border-bottom:1px solid var(--line)}
+.question:last-of-type{border-bottom:0}
+.question h3{font-size:16px;margin:0 0 12px;color:var(--teal)}
+.options{display:flex;flex-wrap:wrap;gap:9px}
+.options button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:8px 14px;color:#536b66;cursor:pointer;font:inherit;font-size:13px}
+.options button.selected{background:var(--teal);border-color:var(--teal);color:#fff}
+.quiz-actions{display:flex;align-items:center;gap:15px;margin-top:18px;flex-wrap:wrap}
+.quiz-actions button{background:var(--gold);border:0;border-radius:999px;padding:10px 18px;color:#253e39;font:inherit;font-weight:900;cursor:pointer}
+#quizResult{font-size:14px;color:var(--teal);font-weight:800}
+.conclusion{background:linear-gradient(130deg,#174943,#23665c);color:white;border-radius:24px;padding:30px;text-align:center}
+.conclusion h2{color:#fff;margin-top:0}
+.conclusion p{max-width:780px;margin:0 auto;color:#e0ece7}
+.references{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ref{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:13px;color:var(--muted)}
+.ref a{color:var(--teal2);font-weight:800;text-decoration:none}
+.ref a:hover{text-decoration:underline}
+footer{padding:25px 0 35px;text-align:center;color:#82908a;font-size:12px}
+footer strong{color:var(--teal)}
+@media(max-width:850px){.hero-grid{grid-template-columns:1fr}.hero-art{display:none}.cards{grid-template-columns:repeat(2,1fr)}nav{gap:10px}nav a{font-size:12px}}
+@media(max-width:600px){.nav{padding:10px 15px}.brand{font-size:13px}nav{display:none}.wrap{padding:0 16px}.hero{padding:52px 0 44px}.hero p{font-size:15px}.section{padding:45px 0}.cards,.care-grid,.practice-grid,.references{grid-template-columns:1fr}.intro-box{grid-template-columns:1fr;padding:20px}.intro-icon{width:44px;height:44px}.card{padding:19px}.quiz{padding:18px}.highlight blockquote{font-size:18px}}
+body.dark{--ink:#e8efeb;--muted:#b0c0b9;--teal:#d5e8df;--teal2:#a6d0c2;--mint:#254842;--cream:#102c2a;--paper:#183936;--line:#31544f;--shadow:0 18px 45px rgba(0,0,0,.18)}
+body.dark header{background:rgba(16,44,42,.93)}body.dark .brand,body.dark h2,body.dark .card h3,body.dark .care-item h3,body.dark .practice-panel h3{color:var(--teal)}body.dark .intro-box p,body.dark .evidence,body.dark .evidence .hadith{color:#d4e4dc}body.dark .quote{background:#263f38;color:#e6eee8}body.dark .band{background:#173a35;border-color:#31544f}body.dark .care-item{background:#1b403b;border-color:#31544f}body.dark .options button{background:#21443f;color:#dce9e3;border-color:#3a5b55}body.dark .options button.selected{background:#c89b55;color:#183a3a}body.dark .ref a{color:#b6dfd0}
+@media print{header,.progress,.hero-actions,.theme,.quiz-actions{display:none!important}.hero{padding:30px 0;background:#174e4a!important;print-color-adjust:exact}.section{padding:28px 0;break-inside:avoid}.card,.intro-box,.practice-panel,.care-item{break-inside:avoid;box-shadow:none}.cards{grid-template-columns:repeat(2,1fr)}body{background:#fff;color:#183a3a}}
+</style>
+</head>
+<body>
+<div class="progress"><span id="progressBar"></span></div>
+<header>
+  <div class="nav">
+    <div class="brand"><span class="brand-mark">✦</span><span>قيم تبني مجتمعاً</span></div>
+    <nav aria-label="التنقل الرئيسي">
+      <a href="#intro">المفهوم</a><a href="#foundations">الأسس</a><a href="#islam">عناية الإسلام</a><a href="#life">تطبيقات</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">موضوع إثرائي من المقرر</div>
+      <h1>أسس بناء المجتمع<br>وعناية الإسلام بها</h1>
+      <p>المجتمع القوي لا يقوم على اجتماع الأفراد فقط، بل على قيم تجمعهم، وحقوق تحفظ كرامتهم، ومسؤوليات يتعاونون على أدائها. وقد وضع الإسلام أصولاً واضحة لبناء مجتمع متماسك يسوده العدل والرحمة والتكافل.</p>
+      <div class="hero-actions"><a class="btn primary" href="#foundations">اكتشف أسس البناء</a><a class="btn ghost" href="#references">المصادر الشرعية</a></div>
+    </div>
+    <div class="hero-art" aria-hidden="true"><div class="arch"><div class="arch-inner">۞</div></div><div class="art-caption">بالقيم يترابط المجتمع ويقوى</div></div>
+  </div>
+</section>
+
+<section class="section" id="intro">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">01 · مدخل إلى الموضوع</div><h2>ما المقصود ببناء المجتمع؟</h2><p>فهم الأساس يساعدنا على إدراك أثر القيم في حياة الناس.</p></div>
+    <div class="intro-box">
+      <div class="intro-icon">⌂</div>
+      <div>
+        <p>بناء المجتمع هو تكوين بيئة إنسانية مترابطة، يعرف أفرادها حقوقهم وواجباتهم، ويتعاونون لتحقيق المصالح المشتركة، ويحافظون على الأمن والاستقرار. ولا يتحقق ذلك إلا بوجود مبادئ أخلاقية واجتماعية تنظم العلاقات بين الناس.</p>
+        <div class="quote">﴿وَاعْتَصِمُوا بِحَبْلِ اللَّهِ جَمِيعًا وَلَا تَفَرَّقُوا﴾ <small>سورة آل عمران، الآية 103 · دعوة إلى الوحدة والتمسك بما يجمع الناس على الخير.</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="foundations" style="padding-top:10px">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">02 · ركائز المجتمع</div><h2>أهم أسس بناء المجتمع في الإسلام</h2><p>تتكامل هذه الأسس لتصنع مجتمعاً متوازناً، يحفظ الحقوق ويقوي الروابط بين أفراده.</p></div>
+    <div class="cards">
+      <article class="card"><div class="card-top"><span class="num">01 / القيم</span><span class="icon">✧</span></div><h3>الإيمان والقيم الصالحة</h3><p>الإيمان بالله يوجه السلوك، ويغرس الصدق والأمانة والإحسان ومراقبة الله في السر والعلن.</p><div class="evidence"><b>دليل من القرآن</b>﴿إِنَّ اللَّهَ يَأْمُرُ بِالْعَدْلِ وَالْإِحْسَانِ﴾<small>النحل: 90</small></div></article>
+      <article class="card"><div class="card-top"><span class="num">02 / الترابط</span><span class="icon">♡</span></div><h3>الأخوة والوحدة</h3><p>الأخوة تنشر المحبة وتحد من النزاع، وتدفع أفراد المجتمع إلى الإصلاح والتعاون بدلاً من التفرق.</p><div class="evidence"><b>دليل من القرآن</b>﴿إِنَّمَا الْمُؤْمِنُونَ إِخْوَةٌ فَأَصْلِحُوا بَيْنَ أَخَوَيْكُمْ﴾<small>الحجرات: 10</small></div></article>
+      <article class="card"><div class="card-top"><span class="num">03 / الإنصاف</span><span class="icon">⚖</span></div><h3>العدل والمساواة</h3><p>العدل أساس الثقة والاستقرار؛ فيُعطى كل ذي حق حقه، ولا يُظلم أحد بسبب نسب أو مال أو مكانة.</p><div class="evidence"><b>دليل من القرآن</b>﴿وَإِذَا حَكَمْتُمْ بَيْنَ النَّاسِ أَنْ تَحْكُمُوا بِالْعَدْلِ﴾<small>النساء: 58</small></div></article>
+      <article class="card"><div class="card-top"><span class="num">04 / التكافل</span><span class="icon">🤝</span></div><h3>التعاون والتكافل</h3><p>يتعاون الناس في الأعمال النافعة، ويساعد القادر المحتاج، وتُبذل الجهود لخدمة المجتمع ومواجهة الصعوبات.</p><div class="evidence"><b>دليل من القرآن</b>﴿وَتَعَاوَنُوا عَلَى الْبِرِّ وَالتَّقْوَى﴾<small>المائدة: 2</small></div></article>
+      <article class="card"><div class="card-top"><span class="num">05 / الرحمة</span><span class="icon">☼</span></div><h3>الرحمة والتراحم</h3><p>الرحمة تجعل أفراد المجتمع يشعرون بآلام بعضهم، ويراعون الضعفاء، ويحسنون إلى الجار والصغير والكبير.</p><div class="evidence"><b>دليل من السنة</b><span class="hadith">«مثل المؤمنين في توادهم وتراحمهم وتعاطفهم مثل الجسد»</span><small>رواه البخاري (6011) ومسلم (2586).</small></div></article>
+      <article class="card"><div class="card-top"><span class="num">06 / الحقوق</span><span class="icon">✦</span></div><h3>الأمانة وحفظ الحقوق</h3><p>حفظ الأمانات والعهود واحترام حقوق الآخرين يمنع الاعتداء ويعزز الثقة بين أفراد المجتمع.</p><div class="evidence"><b>دليل من القرآن</b>﴿إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تُؤَدُّوا الْأَمَانَاتِ إِلَى أَهْلِهَا﴾<small>النساء: 58</small></div></article>
+      <article class="card"><div class="card-top"><span class="num">07 / المعرفة</span><span class="icon">⌘</span></div><h3>العلم والعمل النافع</h3><p>بالعلم تتقدم المجتمعات، وبالعمل والإتقان تتحول المعرفة إلى إنجازات تخدم الإنسان وتطور الحياة.</p><div class="evidence"><b>دليل من القرآن</b>﴿يَرْفَعِ اللَّهُ الَّذِينَ آمَنُوا مِنْكُمْ وَالَّذِينَ أُوتُوا الْعِلْمَ دَرَجَاتٍ﴾<small>المجادلة: 11</small></div></article>
+      <article class="card"><div class="card-top"><span class="num">08 / الاستقرار</span><span class="icon">☾</span></div><h3>الإصلاح والسلم</h3><p>حل الخلافات بالحكمة والحوار، والابتعاد عن العدوان، من أسباب حفظ الأمن واستمرار العلاقات الطيبة.</p><div class="evidence"><b>دليل من القرآن</b>﴿وَإِنْ جَنَحُوا لِلسَّلْمِ فَاجْنَحْ لَهَا﴾<small>الأنفال: 61</small></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="islam">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">03 · عناية الإسلام بالمجتمع</div><h2>كيف اعتنى الإسلام ببناء المجتمع؟</h2><p>لم يكتف الإسلام بالدعوة إلى الأخلاق، بل وضع توجيهات وتشريعات تجعل القيم واقعاً في حياة الناس.</p></div>
+    <div class="care-grid">
+      <div class="care-item"><div class="care-no">1</div><div><h3>تقوية رابطة الأخوة</h3><p>حث على إفشاء السلام، وإصلاح ذات البين، ونبذ التباغض والتنازع.</p></div></div>
+      <div class="care-item"><div class="care-no">2</div><div><h3>تحقيق العدالة</h3><p>أمر بالعدل في الحكم والشهادة والمعاملة، ونهى عن الظلم وأكل حقوق الآخرين.</p></div></div>
+      <div class="care-item"><div class="care-no">3</div><div><h3>رعاية المحتاجين</h3><p>شرع الزكاة، ورغّب في الصدقة والإحسان وصلة الرحم ومساعدة المحتاج.</p></div></div>
+      <div class="care-item"><div class="care-no">4</div><div><h3>حماية الأسرة</h3><p>أكد بر الوالدين، ورعاية الأبناء، وحسن العشرة، وصلة الأقارب.</p></div></div>
+      <div class="care-item"><div class="care-no">5</div><div><h3>حفظ الكرامة والحقوق</h3><p>نهى عن السخرية والغيبة والتنابز بالألقاب، وأكد حرمة الاعتداء على الناس.</p></div></div>
+      <div class="care-item"><div class="care-no">6</div><div><h3>نشر الأمن والسلام</h3><p>دعا إلى الإصلاح، والوفاء بالعهود، وترك العدوان، وإشاعة الطمأنينة.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="life">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">04 · من الفكرة إلى السلوك</div><h2>كيف نطبق هذه الأسس في حياتنا؟</h2><p>بناء المجتمع مسؤولية مشتركة، وتبدأ من تصرفات بسيطة نمارسها كل يوم.</p></div>
+    <div class="practice-grid">
+      <div class="practice-panel"><h3>ممارسات تصنع فرقاً</h3><ul class="checks"><li>احترام الآخرين والاستماع إلى آرائهم بأدب.</li><li>مساعدة الزملاء والجيران والمحتاجين.</li><li>الصدق في الحديث والوفاء بالوعد وأداء الأمانة.</li><li>رفض التنمر والسخرية والغيبة ونشر الشائعات.</li><li>المحافظة على الممتلكات العامة والبيئة.</li><li>حل الخلافات بالحوار والاعتذار وقبول الصلح.</li></ul></div>
+      <div class="highlight"><blockquote>«المؤمن للمؤمن كالبنيان، يشد بعضه بعضاً»</blockquote><p>حديث صحيح، رواه البخاري (6026) ومسلم (2585).<br>يوضح الحديث أن قوة المجتمع تنشأ من تساند أفراده، لا من عمل كل فرد بمعزل عن الآخرين.</p></div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id="conclusion" style="padding-top:5px">
+  <div class="wrap"><div class="conclusion"><div class="kicker" style="color:#efd5a6">الخلاصة</div><h2>مجتمع متماسك يبدأ بفرد مسؤول</h2><p>يتضح أن الإسلام اعتنى ببناء المجتمع عناية شاملة؛ فربط بين الإيمان وحسن التعامل، وأقام العلاقات على الأخوة والعدل والرحمة والتعاون، وحفظ الحقوق، ودعا إلى العلم والإصلاح. وكلما التزم الأفراد بهذه المبادئ أصبح المجتمع أكثر قوة وأمناً وتماسكاً.</p></div></div>
+</section>
+
+<section class="section" id="references" style="padding-top:25px">
+  <div class="wrap">
+    <div class="section-head"><div class="kicker">للتوثيق والاطلاع</div><h2>المراجع الشرعية</h2><p>الآيات والأحاديث الواردة في الصفحة مع مواضعها ومصادر تخريج الأحاديث.</p></div>
+    <div class="references">
+      <div class="ref">القرآن الكريم: آل عمران (103)، الحجرات (10، 13)، المائدة (2)، النحل (90)، النساء (58)، المجادلة (11)، الأنفال (61).<br><a href="https://quran.com/" target="_blank" rel="noopener">الاطلاع على القرآن الكريم</a></div>
+      <div class="ref">حديث «المؤمن للمؤمن كالبنيان يشد بعضه بعضاً».<br><a href="https://dorar.net/h/BEObtBEM/osoul" target="_blank" rel="noopener">تخريج الحديث – الدرر السنية</a></div>
+      <div class="ref">حديث «مثل المؤمنين في توادهم وتراحمهم وتعاطفهم مثل الجسد».<br><a href="https://dorar.net/h/SBCAky4b/osoul" target="_blank" rel="noopener">تخريج الحديث – الدرر السنية</a></div>
+      <div class="ref">حديث «لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه».<br><a href="https://dorar.net/h/a3n67ZEt" target="_blank" rel="noopener">تخريج الحديث – الدرر السنية</a></div>
+    </div>
+  </div>
+</section>
+</main>
+<footer>
+  <strong>نشاط لمقرر: الإسلام وبناء المجتمع</strong><br>
+  فصل 481<br>
+  اسم الطالبة: لمار الخيطان<br>
+  الرقم الجامعي: 461209960
+</footer>
+<script>
+const progressBar=document.getElementById('progressBar');
+window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-window.innerHeight;progressBar.style.width=(max>0?(window.scrollY/max)*100:0)+'%'});
+</script>
+</body>
+</html>
